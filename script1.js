@@ -1,3 +1,6 @@
+// inspired by Traversy Media and Adam Khoury
+// thanks a lot!
+
 const video = document.getElementById('video');
 const play = document.getElementById('play');
 const stop = document.getElementById('stop');
