@@ -46,10 +46,12 @@ h1 {
 .controls .fa-stop{
     color: #dc3545;    
 }
-.controls .fa-volume-up{
-    color: orange;    
+.controls .fa-forward, .fa-backward{
+    color: blueviolet;    
 }
-
+.controls .fa-volume-up{
+    color: orange;  
+}
 .controls .fa-volume-mute{
     color: red;
 } 

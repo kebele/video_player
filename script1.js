@@ -4,6 +4,8 @@
 const video = document.getElementById('video');
 const play = document.getElementById('play');
 const stop = document.getElementById('stop');
+const backward = document.getElementById('backward');
+const forward = document.getElementById('forward');
 const mute = document.getElementById('mute');
 const volumeSlider = document.getElementById('volumeSlider');
 const progress = document.getElementById('progress');
@@ -49,6 +51,17 @@ function stopVideo(){
     // return true;
     video.currentTime = 0;
     video.pause();
+}
+
+//forward and backward
+function forward15(){
+    // return true; 
+    video.currentTime += 10;   
+}
+
+function backward15(){
+    // return true;
+    video.currentTime -= 10; 
 }
 
 //update progress & timestamp
@@ -115,4 +128,6 @@ stop.addEventListener('click', stopVideo);
 progress.addEventListener('change', setVideoProgress);
 mute.addEventListener('click', audioStatus);
 volumeSlider.addEventListener('change', setVolume);
-fullScreen.addEventListener('click', toggleFullScreen)
+fullScreen.addEventListener('click', toggleFullScreen);
+backward.addEventListener('click', backward15);
+forward.addEventListener('click', forward15);
